@@ -19,6 +19,8 @@ find_library(Osal_LIBRARIES
     HINTS "${Osal_ROOT_DIRS}/output")
 
 if(Osal_INCLUDE_DIR)
+    if(NOT Osal_LIBRARIES)
+    endif()
     set(Osal_FOUND true)
     set(Osal_INCLUDE_DIRS ${Osal_INCLUDE_DIR})
 endif()
